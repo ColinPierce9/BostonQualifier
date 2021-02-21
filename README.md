@@ -6,3 +6,18 @@ For runners of all skill levels, qualifing to enter the Boston Marathon is a maj
 
 The data for this analysis was obtained from miloandthecalf.com. For the past several years, the site has hosted a questionnaire for athletes that have qualified for the Boston for the first time. This will allow insight into the training habits required to qualify for the race.
 
+### Project
+
+In this project, I've created a pipeline with python in order to store and analyze the data.
+- Extract the data from the public google sheet with requests
+- Convert to a dataframe to easily clean and transform the data as needed for analysis
+- Load data to postgresql database for storage. Database can be accessed for analysis and dashboarding
+
+### Folders
+
+There are two folders in the repository.
+- BostonQual-scripts: 
+- - BQ_ETL_Main:
+- - BQ_ExtactCleanData: 
+- - Demo
+- BostonQual-notebooks
