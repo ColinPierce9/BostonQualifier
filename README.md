@@ -1,4 +1,4 @@
-# BostonQualifier
+# Boston Marathon Data Pipeline
 
 The Boston Marathon is one of the most popular races in world. Starting in 1897, the race has drawn elite and amateur runners every year to complete the infamous 26.2 miles. 
 
@@ -6,7 +6,7 @@ For runners of all skill levels, qualifing to enter the Boston Marathon is a maj
 
 The data for this analysis was obtained from miloandthecalf.com. For the past several years, the site has hosted a questionnaire for athletes that have qualified for the Boston for the first time. This will allow insight into the training habits required to qualify for the race.
 
-### Project
+# Project
 
 In this project, I've created a pipeline with python in order to store and analyze the data.
 - Extract the data from the public google sheet
@@ -14,7 +14,7 @@ In this project, I've created a pipeline with python in order to store and analy
 - Load data to postgresql database for storage. Database can be accessed for analysis and dashboarding
 - Initial analysis of the data
 
-### Folders
+# Folders
 
 There are two folders in the repository. 'BostonQual-scripts' is for actually initiating the etl pipeline and extracting the clean data for analysis. 'BostonQual-notebooks' is a notebook showing the entire etl process in more detail. This notebook also contains an in depth analysis of the data. These visualizations will eventually be expanded on further. 
 - BostonQual-scripts: 
@@ -27,6 +27,6 @@ There are two folders in the repository. 'BostonQual-scripts' is for actually in
   - loadextract.py: contains the code for working with the database. Note the password is omitted on this repository.
 
 
-### Future Work
+# Future Work
 - Create a dashboard containing my analysis to connect with the database. Most likely create my own dashboard with python and django.
 - Automate the etl pipeline. Currently, you need to run the python scripts to the extract any new raw data from the source or the clean data from my database. Research the etl workflow tools (likely airflow). 
