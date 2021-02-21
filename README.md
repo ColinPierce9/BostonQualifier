@@ -9,15 +9,24 @@ The data for this analysis was obtained from miloandthecalf.com. For the past se
 ### Project
 
 In this project, I've created a pipeline with python in order to store and analyze the data.
-- Extract the data from the public google sheet with requests
+- Extract the data from the public google sheet
 - Convert to a dataframe to easily clean and transform the data as needed for analysis
 - Load data to postgresql database for storage. Database can be accessed for analysis and dashboarding
+- Initial analysis of the data
 
 ### Folders
 
-There are two folders in the repository.
+There are two folders in the repository. 'BostonQual-scripts' is for actually initiating the etl pipeline and extracting the clean data for analysis. 'BostonQual-notebooks' is a notebook showing the entire etl process in more detail. This notebook also contains an in depth analysis of the data. These visualizations will eventually be expanded on further. 
 - BostonQual-scripts: 
-- - BQ_ETL_Main:
-- - BQ_ExtactCleanData: 
-- - Demo
+  - BQ_ETL_Main.py: extract data from google sheet, clean and transform data, and load to database 
+  - BQ_ExtactCleanData.py: extract clean data from database and returns into a dataframe
+  - Demo.ipynb: showcase of how to use these two python scripts
+  - loadextract.py: contains the code for working with the database. Note the password is omitted on this repository. 
 - BostonQual-notebooks
+  - BQ_ETL.ipynb: Full etl pipeline in more detail. Analysis of the data. 
+  - loadextract.py: contains the code for working with the database. Note the password is omitted on this repository.
+
+
+### Future Work
+- Create a dashboard containing my analysis to connect with the database. Most likely create my own dashboard with python and django.
+- Automate the etl pipeline. Currently, you need to run the python scripts to the extract any new raw data from the source or the clean data from my database. Research the etl workflow tools (likely airflow). 
